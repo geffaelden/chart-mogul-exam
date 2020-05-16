@@ -71,3 +71,13 @@ Add one time charges to 3 customers
 | parks_01003_09 (Chris Traeger) | $499.00 | 99.99% Service Guarantee
 | parks_04008_04 (Tom Haverford) | $150.00 | Premium Features
 | parks_04005_07 (Andy Dwyer) | $10.00 | Late Payment Fee
+
+#### Cancellations
+Add cancellations to 4 customers
+
+| name  | sub_id | cancel date
+| - | - | - 
+| Ron Swanson | diam_00002 | 2020-04-29
+| Andy Dwyer | gold_00002 | 2020-04-30
+| Ben Wyatt | gold_00003 | 2020-02-07
+| April Ludgate | silv_00003 | 2020-04-22
