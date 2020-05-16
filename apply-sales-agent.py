@@ -57,6 +57,7 @@ def with_file(file_input):
                 ]
             }
         )
+    return None
 
 def main():
     #Dataframe to visualize Customer List
@@ -77,6 +78,7 @@ def main():
         if 'uuid' in file_input and 'sales_agent' in file_input:
             with_file(file_input)
             df = file_input
+            print('Done sales agent assignment')
         else: 
             print('One or both required columns not found. Please check your file and try again')
         
@@ -89,6 +91,7 @@ def main():
         print('Done assignment')
         
     #Show final output of customer list with sales agent
+    #Comment out if not necessary to print output
     print(df)
     
 if __name__ == "__main__":
