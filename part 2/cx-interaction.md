@@ -41,3 +41,6 @@
 >The prorate amount is the ratio of the remaining time in the subscription period and original full time of the subscription multiplied by the full amount of the plan. 
 >
 >I hope this helps! Let me know if you have further questions.
+>
+>All the best,
+>Gef
