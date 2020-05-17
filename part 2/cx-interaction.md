@@ -23,3 +23,11 @@
 >Homer Simpson
 
 #### Support Reply
+
+>Hi Homer,
+>
+>I'm glad to hear that Chart Mogul is suiting your needs and I'm more than happy to help you with your questions.
+>
+>1. For that specific scenario, I would suggest implementing this as an attribute to simpler filtering and segmentation. You can read more about attributes here https://help.chartmogul.com/hc/en-us/articles/206120219-Customer-attributes. Depending on the system you use, we have a couple of different automated ways to intergrate your attribute. I would say the simplest would be using our Google Sheets integration as demonstrated here https://help.chartmogul.com/hc/en-us/articles/207251069.
+>
+>2.
