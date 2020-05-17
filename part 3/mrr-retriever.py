@@ -49,7 +49,7 @@ def main():
     #Save the data into a csv
     df.to_csv('mrr_data.csv',index=False)
     
-    print('\033[4m\033[1mTotal MRR for Q1 2019\033[0m\n') #escape characters for bold printing
+    print('\033[4m\033[1mTotal MRR for Q1 2019\033[0m\n') #escape characters for bold and underline printing
     
     #This printing method only works if interval is month 
     if interval == 'month':
