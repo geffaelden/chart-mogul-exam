@@ -11,4 +11,4 @@
 - Sample output data by the code mrr-retriever structured into csv for simple analysis and charting/presentation preference
 
 ### sample-print-output-preferred.PNG
-- Shows the sample charting using a preferred charting software
+- Shows the sample charting using a my preferred charting software
