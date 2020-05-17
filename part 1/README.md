@@ -9,5 +9,8 @@
 - Optional: File agent_mapping.csv __(required columns: uuid, sales_agent)__
   - If file is present when code is executed, sales_agent assignment in the file will be followed
 
+### agent_mapping.csv
+- Sample input file to apply-sales-agent.py
+- Also the output of agent-sales-agent.py 
 
 
