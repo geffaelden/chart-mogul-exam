@@ -30,4 +30,8 @@
 >
 >1. For that specific scenario, I would suggest implementing this as an attribute to simpler filtering and segmentation. You can read more about attributes here https://help.chartmogul.com/hc/en-us/articles/206120219-Customer-attributes. Depending on the system you use, we have a couple of different automated ways to intergrate your attribute. I would say the simplest would be using our Google Sheets integration as demonstrated here https://help.chartmogul.com/hc/en-us/articles/207251069.
 >
->2.
+>2. The full documentation of how Chart Mogul computes MRR for invoices with proration is found here https://dev.chartmogul.com/docs/how-mrr-is-calculated-from-prorated-invoices. Basically, we compute MRR based on the number of seconds for proration. In your case, there will are 3 relevant items to look at for proper computation:
+>
+>|Invoice Item|Start Date|End Date|Price
+>|-|-|-|-
+>|Item 1||||
