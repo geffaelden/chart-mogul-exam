@@ -62,7 +62,7 @@ def main():
                 change = ((mrr-prev)/prev *100).round(1)
             #Prints and converts MRR from cents to USD
             print('{}:  \t{:.2f} USD ({}%)'.format(datetime.datetime.strptime(df['end_date'][i],'%Y-%m-%d').strftime('%B'), mrr, change))
-            #This is for percent changed
+            #This is for percent change
             prev = mrr
     
     #Plotting
