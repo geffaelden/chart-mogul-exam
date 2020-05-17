@@ -49,8 +49,16 @@ def main():
     #Save the data into a csv
     df.to_csv('mrr_data.csv',index=False)
     
-    ax = df[['end_date', 'mrr']].plot(x='end_date', linestyle='-', marker='o',colormap='hsv')
-    df[['end_date', 'mrr_positive','mrr_negative']].plot(x='end_date', kind='bar',stacked = True, ax=ax)
+    print('\033[4m\033[1mTotal MRR for Q1 2019\033[0m\n') #escape characters for bold printing
+    
+    #This printing method only works if interval is month 
+    if interval == 'month':
+        for i in range(len(df)):
+            print('{}:  \t{:.2f} USD'.format(datetime.datetime.strptime(df['end_date'][i],'%Y-%m-%d').strftime('%B'), df['mrr'][i]/100)) #Prints and converts MRR from cents to USD
+    
+    #Plotting
+    ax = df[['end_date', 'mrr']].plot(x='end_date', linestyle='-', marker='o',colormap='hsv',title = 'mrr movement') # Line Graph
+    df[['end_date', 'mrr_positive','mrr_negative']].plot(x='end_date', kind='bar',stacked = True, ax=ax) # Stacked bar
 
 if __name__ == "__main__":
     main()
