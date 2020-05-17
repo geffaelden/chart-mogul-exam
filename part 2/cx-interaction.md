@@ -30,8 +30,14 @@
 >
 >1. For that specific scenario, I would suggest implementing this as an attribute to simpler filtering and segmentation. You can read more about attributes here https://help.chartmogul.com/hc/en-us/articles/206120219-Customer-attributes. Depending on the system you use, we have a couple of different automated ways to intergrate your attribute. I would say the simplest would be using our Google Sheets integration as demonstrated here https://help.chartmogul.com/hc/en-us/articles/207251069.
 >
->2. The full documentation of how Chart Mogul computes MRR for invoices with proration is found here https://dev.chartmogul.com/docs/how-mrr-is-calculated-from-prorated-invoices. Basically, we compute MRR based on the number of seconds for proration. In your case, there will are 3 relevant items to look at for proper computation:
+>2. The full documentation of how Chart Mogul computes MRR for invoices with proration is found here https://dev.chartmogul.com/docs/how-mrr-is-calculated-from-prorated-invoices. Basically, we compute MRR based on the number of seconds for proration. In your case, to compute for the proper prorated amount, you will need to know the time to be considered for proration and therefore there will are 3 relevant items to look at:
 >
->|Invoice Item|Start Date|End Date|Price
->|-|-|-|-
->|Item 1||||
+>|Invoice Item|Start Date|End Date|Full Amount|Number of seconds (End-Start)|Prorate Amount
+>|-|-|-|-|-|-
+>|Pro Plan (Original Subscription)|11-01-2019 15:23:00|12-01-2019 15:23:00|$60|2592000|$60 (Full)
+>|Pro Plan (For Crediting)|11-10-2019 20:30:00|12-01-2019 15:23:00|$60|796020|-$41.57 (Prorate Credit)
+>|Enterpise Plan (New Plan)|11-10-2019 20:30:00|12-01-2019 15:23:00|$100|796020|$69.29 (Prorate Charge)
+>
+>The prorate amount is the ratio of the remaining time in the subscription period and original full time of the subscription multiplied by the full amount of the plan. 
+>
+>I hope this helps! Let me know if you have further questions.
